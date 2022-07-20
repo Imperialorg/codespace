@@ -6,4 +6,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
  RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon xen-hypervisor-common tightvncserver ubuntu-gnome-desktop
+     && apt-get -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon xen-hypervisor-common tightvncserver xfce4 xfce4-goodies
