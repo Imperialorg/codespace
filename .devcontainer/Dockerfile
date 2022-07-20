@@ -6,6 +6,6 @@ FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
 
 # [Optional] Uncomment this section to install additional OS packages.
  RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-     && apt-get -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon xen-hypervisor-common
+     && apt-get -y install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon xen-hypervisor-common ubuntu-gnome-desktop
 
 RUN sudo systemctl enable --now libvirtd
